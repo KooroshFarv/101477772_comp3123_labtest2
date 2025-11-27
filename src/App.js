@@ -32,9 +32,9 @@ function App() {
   };
 
   return (
-     <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-700 text-white px-4 py-10">
+     <div className="min-h-screen bg-gradient-to-b from-white/20 to-black text-white px-4 py-10">
       <div className="max-w-md mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-6">Weather App</h1>
+        <h1 className="text-3xl font-bold text-center mb-6">My Weather App</h1>
         <div className="flex gap-2 mb-5">
           <input
             value={city}
@@ -44,7 +44,7 @@ function App() {
           />
           <button
             onClick={fetchWeather}
-            className="px-4 py-2 bg-blue-500 hover:bg-blue-600 rounded-xl"
+            className="px-4 py-2 bg-black hover:bg-white hover:text-black rounded-xl"
           >
             {loading ? 'loading ..' : 'Search'}
           </button>
